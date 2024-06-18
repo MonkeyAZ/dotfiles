@@ -114,3 +114,4 @@ alias python=python3
 alias pip=pip3
 alias pg='ps aux | grep -v grep | grep $1'
 alias cat='pygmentize -g'
+alias k=kubectl
