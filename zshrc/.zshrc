@@ -115,3 +115,4 @@ alias pip=pip3
 alias pg='ps aux | grep -v grep | grep $1'
 alias cat='pygmentize -g'
 alias k=kubectl
+alias ff='nvim $(fzf -m --preview="bat --color=always {}")'
