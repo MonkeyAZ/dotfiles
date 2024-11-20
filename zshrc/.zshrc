@@ -70,10 +70,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-z zsh-autosuggestions sudo web-search aws git brew docker docker-compose gradle terraform zsh-syntax-highlighting env direnv)
+plugins=(zsh-z zsh-autosuggestions sudo web-search aws git brew docker docker-compose gradle terraform zsh-syntax-highlighting env direnv zsh-eza)
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(direnv hook zsh)"
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -110,9 +111,16 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias mp="mvn package"
+alias mci="mvn clean install"
 alias python=python3
 alias pip=pip3
 alias pg='ps aux | grep -v grep | grep $1'
-alias cat='pygmentize -g'
+#alias cat='pygmentize -g'
 alias k=kubectl
+alias bat=batcat
 alias ff='nvim $(fzf -m --preview="bat --color=always {}")'
+alias -- -='cd -'
+alias lg=lazygit
+export FPATH="/home/alex/eza/completions/zsh:$FPATH"
+
+. "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
