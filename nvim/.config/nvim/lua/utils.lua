@@ -72,7 +72,6 @@ function M.get_current_class_name()
 	if not child then
 		return nil
 	end
-	print("test")
 	return vim.treesitter.get_node_text(child, 0)
 end
 
