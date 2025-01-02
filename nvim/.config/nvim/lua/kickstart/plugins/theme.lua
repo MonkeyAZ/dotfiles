@@ -8,6 +8,13 @@ return {
     -- "scottmckendry/cyberdream.nvim",
     -- 'catppuccin/nvim',
     -- "rose-pine/neovim",
+    -- opts = {
+    --   transparent = true,
+    --   styles = {
+    --     sidebars = 'transparent',
+    --     floats = 'transparent',
+    --   },
+    -- },
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
