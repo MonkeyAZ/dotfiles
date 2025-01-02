@@ -30,7 +30,6 @@ return {
         -- Conform can also run multiple formatters sequentially
         python = { 'black' },
         xml = { 'xmlformatter' },
-        yaml = { 'yamlfix' },
         sql = { 'sql-formatter' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter

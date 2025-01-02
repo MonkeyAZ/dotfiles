@@ -121,6 +121,7 @@ alias bat=batcat
 alias ff='nvim $(fzf -m --preview="bat --color=always {}")'
 alias -- -='cd -'
 alias lg=lazygit
+alias vi=nvim
 export FPATH="/home/alex/eza/completions/zsh:$FPATH"
 
-. "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+export BROWSER=firefox
