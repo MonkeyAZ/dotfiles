@@ -17,8 +17,8 @@ return {
     -- tabline configuration
     vim.cmd('let g:airline#extensions#tabline#enabled=1')
     vim.cmd('let g:airline#extensions#tabline#show_splits=0')
-    vim.cmd('let g:airline#extensions#tabline#show_buffers=1')
-    vim.cmd('let g:airline#extensions#tabline#show_tabs=0')
+    vim.cmd('let g:airline#extensions#tabline#show_buffers=0')
+    vim.cmd('let g:airline#extensions#tabline#show_tabs=1')
     vim.cmd('let g:airline#extensions#tabline#exclude_preview=1')
     vim.cmd('let g:airline#extensions#tabline#show_tab_nr=1')
     vim.cmd('let g:airline#extensions#tabline#tab_nr_type=1')
