@@ -18,6 +18,8 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+vim.opt.tabstop = 2
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
@@ -68,9 +70,9 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
-vim.cmd([[
-augroup jdtls_lsp
-    autocmd!
-    autocmd FileType java lua require'jdtls.jdtls_setup'.setup()
-augroup end
-]])
+--vim.cmd([[
+--augroup jdtls_lsp
+--    autocmd!
+--    autocmd FileType java lua require'jdtls.jdtls_setup'.setup()
+--augroup end
+--]])
