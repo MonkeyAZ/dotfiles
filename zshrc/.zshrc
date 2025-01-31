@@ -126,3 +126,4 @@ export FPATH="/home/alex/eza/completions/zsh:$FPATH"
 
 export BROWSER=firefox
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
