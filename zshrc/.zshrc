@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-z zsh-autosuggestions sudo web-search aws git brew docker docker-compose gradle terraform zsh-syntax-highlighting env direnv zsh-eza)
+plugins=(z zsh-autosuggestions sudo web-search aws git brew docker docker-compose gradle terraform zsh-syntax-highlighting direnv zsh-eza)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -80,7 +80,7 @@ eval "$(direnv hook zsh)"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -100,9 +100,9 @@ eval "$(direnv hook zsh)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-[[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
+#[[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -121,7 +121,7 @@ alias bat=batcat
 alias ff='nvim $(fzf -m --preview="bat --color=always {}")'
 alias -- -='cd -'
 alias lg=lazygit
-alias vi=nvim
+alias v=nvim
 export FPATH="/home/alex/eza/completions/zsh:$FPATH"
 
 export BROWSER=firefox
