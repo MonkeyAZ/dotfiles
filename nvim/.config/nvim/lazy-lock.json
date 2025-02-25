@@ -48,5 +48,6 @@
   "vim-signify": { "branch": "master", "commit": "8670143f9e12ed1cd3c9b2c54f345cdd9a4baac3" },
   "vim-sleuth": { "branch": "master", "commit": "1cc4557420f215d02c4d2645a748a816c220e99b" },
   "vim-terraform": { "branch": "master", "commit": "24de93afb05078bac6a2e966402cc1f672277708" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "05fa2b17e2425541d4e5dae86b84f1a932713414" },
   "which-key.nvim": { "branch": "main", "commit": "ed5f7622771d0b5c0ac3a5e286ec6cd17b6be131" }
 }
