@@ -6,9 +6,9 @@ return {
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     -- 'folke/tokyonight.nvim',
     -- 'scottmckendry/cyberdream.nvim',
-    -- 'rebelot/kanagawa.nvim',
+    'rebelot/kanagawa.nvim',
     -- 'zootedb0t/citruszest.nvim',
-    'bluz71/vim-moonfly-colors',
+    -- 'bluz71/vim-moonfly-colors',
     -- 'catppuccin/nvim',
     -- "rose-pine/neovim",
     -- opts = {
@@ -23,7 +23,7 @@ return {
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme('moonfly')
+      vim.cmd.colorscheme('kanagawa')
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi('Comment gui=none')
