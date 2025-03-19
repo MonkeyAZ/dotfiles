@@ -142,3 +142,9 @@ local key_map = function(mode, key, result)
 end
 
 key_map('n', '<leader>da', ':lua attach_to_debug()<CR>')
+
+-- key_mapping for tabs --
+vim.keymap.set('n', '<leader>tn', '<cmd>tabnew<CR>', { desc = 'New [t]ab' })
+vim.keymap.set('n', '<leader>to', '<cmd>tabonly<CR>', { desc = 'Close all other [t]abs' })
+vim.keymap.set('n', '<leader>tl', '<cmd>tabnext<CR>', { desc = 'Go to [l]eft tab' })
+vim.keymap.set('n', '<leader>tr', '<cmd>tabprevious<CR>', { desc = 'Go to [r]ight tab' })
